@@ -1,0 +1,38 @@
+plugin.virtualcss.useStyleSheet=myStyleSheet
+
+plugin.virtualcss{
+	  defaultStyles{
+		myStyleSheet{
+			1{
+				selector=body
+				background-color=#314587
+			}
+		}
+	}
+}
+
+
+#************************************************************+
+
+page.headerData {
+    100 = TEXT
+    100.dataWrap = <link rel="stylesheet" type="text/css" href="index.php?id={TSFE:id}&amp;type=999" />
+  }
+
+
+additionalStyles = PAGE
+additionalStyles {
+  typeNum = 999
+  config {
+  	no_cache = 1
+    disableAllHeaderCode = 1
+    pager.typoeNum = 0
+    disableCharsetHeader = 1
+#    additionalHeaders = Content-type: text/css
+    admPanel = 0
+  }
+1 = PHP_SCRIPT
+1.file = EXT:virtualcss/virtual_stylesheets.php
+
+}
+

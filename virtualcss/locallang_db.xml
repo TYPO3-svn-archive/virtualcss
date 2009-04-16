@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'virtualcss'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_virtualcss">Virtual CSS</label>
+			<label index="tx_virtualcss.stylesheet">Stylesheet</label>
+			<label index="tx_virtualcss.selector">Selector</label>
+			<label index="tx_virtualcss.property">Property</label>
+			<label index="tx_virtualcss.value">Value</label>
+		</languageKey>
+	</data>
+</T3locallang>
